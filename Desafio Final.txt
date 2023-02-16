@@ -1,0 +1,25 @@
+Desafío.
+
+Se necesita armar una base de datos que contenga a todos los Sujetos Obligados de Perú y pueda ser consultada a traves de una api.
+
+Sujeto Obligado: Personas naturales y jurídicas que por su actividad son sujetos obligados a informar a la Unidad de Información Financiera. Por ejmeplo, casinos, agentes inmobiliariosm casas de cambio, etc.
+El detalle completo puede leerse en: https://www.sbs.gob.pe/prevencion-de-lavado-activos/Sujetos-Obligados/Relacion-de-Sujetos-Obligados
+
+La URL para consultar si una empresa o individuo es Sujeto Obligado es  https://www.sbs.gob.pe/app/uif/voc/
+
+Para poder relizar las consultas se va a requerir tener el padron de contribuyentes completo, que se puede desargar de la siguiente página https://www.datosabiertos.gob.pe/dataset/padr%C3%B3n-ruc-superintendencia-nacional-de-aduanas-y-de-administraci%C3%B3n-tributaria-sunat
+
+La base debe ser permanentemente actualizada ya que en todo momento pueden aparecer nuevos Sujetos Obligados o dejar de serlo.
+
+Armar un set de estadisticas de la navegación en SQL:
+	Cantidad total de contribuyentes
+	Cantidad total de sujetos obligados 
+	Cantidad de navegaciones y sujetos obligados obtenidos por dia
+
+El desafío se dará por cumplido si:
+	- se logran al menos 100 sujetos obligados
+	- se crea los scripts en sql para obtener estadisticas.
+	- se disponibiliza código fuente y documentacion en Git
+	- el proceso es 100% automático y queda preparado para ejecutarse permanentemente.
+	- existe la api que reciba un RUC y devuelva si es sujeto obligado o no.
+	

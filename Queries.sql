@@ -1,0 +1,3 @@
+select count(RUC) from dbo.Raw_Contribuyentes /*Cantidad contribuyentes*/
+select count(RUC) from dbo.sujetos_obligados where ES_SO = 'SI' /*Cantidad sujetos obligados*/
+select CONVERT(DATE,Fecha_Proceso) as 'Fecha', COUNT(1) as 'Navegaciones',SUM(iif(Es_So='SI',1,0)) as 'Sujetos Obligados' from dbo.sujetos_obligados group by CONVERT(DATE,Fecha_Proceso) /*Cantidad de navegaciones  y sujetos obligados obtenidos por dia*/
